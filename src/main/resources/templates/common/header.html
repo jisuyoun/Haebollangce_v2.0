@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<!-- 상단배너 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/images/fire-solid.png">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/common/header.css">
+    
+    <!-- Custom JS -->
+    <script src="/js/common/header.js"></script>
+</head>
+<body>
+    <div id="main_header" class="container-fluid px-0">
+        <!--  상단 네비게이션 시작 -->
+        <nav class="navbar navbar-expand-lg navbar-light py-3" style="padding: 15px 100px; background-color: #dcd5d5; color: black;">
+            
+            <a class="navbar-brand headerlogo active" href="/main/mainPage">HAEBOLLANGCE</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" arla-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto"> <!-- .mr-auto : 가로축 미사용 공간 너비의 일부를 바깥 여백에 할당한다는 의미임. -->
+                    
+                    <li class="nav-item dropdown active mr-3">
+                        <a class="nav-link dropdown-toggle headerfont" id="navbardrop_chlg" data-toggle="dropdown">챌린지</a>
+                        <div class="dropdown-menu" style="border:none;">
+                            <a class="dropdown-item" href="">챌린지 개설하기</a>
+                            <a class="dropdown-item" href="">챌린지 둘러보기</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown active mr-3">
+                        <a class="nav-link dropdown-toggle headerfont" href="">챌린지 인증</a>
+                    </li>
+                    <li class="nav-item dropdown active mr-3">
+                        <a class="nav-link dropdown-toggle headerfont" id="navbardrop_lng" data-toggle="dropdown">라운지</a>
+                        <div class="dropdown-menu" style="border: none;">
+                            <a class="dropdown-item" href="">라운지 글게시하기</a>
+                            <a class="dropdown-item" href="">라운지 둘러보기</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="form-inline my-2 my-lg-0" id="islogin">
+                    
+                </div>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

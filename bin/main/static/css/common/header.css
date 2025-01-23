@@ -1,0 +1,77 @@
+/* 헤더 */ 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 300;
+}
+
+.headerlogo {
+    font-size:18pt;
+    color: black;
+    font-weight: bold;
+    font-family: 'SDSamliphopangche_Basic';
+    margin-right: 20px; letter-spacing: 2px;
+}
+
+.headerfont {
+    font-size:12pt;
+    color: black;
+    font-weight: bold;
+    font-family: 'Pretendard-Regular';
+}
+
+a.headerfont { 
+    display:inline-block; 
+    margin:0; 
+}
+a.headerfont:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #F43630;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+a.headerfont:hover:after { 
+    transform: scaleX(1); 
+}
+
+
+button.btn-habol {
+    color: #fff;
+    background-color: #F43630;
+    border-color: #F43630;
+    border-radius:10px;
+}
+
+.btn-habol:hover {
+  color: #fff;
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.btn-danger:focus, .btn-habol.focus {
+  color: #fff;
+  background-color: #c82333;
+  border-color: #bd2130;
+  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+}
+
+.btn-habol.disabled, .btn-habol:disabled {
+  color: #fff;
+  background-color: #F43630;
+  border-color: #F43630;
+}
+
+.btn-habol:not(:disabled):not(.disabled):active, .btn-habol:not(:disabled):not(.disabled).active,
+.show > .btn-habol.dropdown-toggle {
+  color: #fff;
+  background-color: #bd2130;
+  border-color: #b21f2d;
+}
+
+.btn-habol:not(:disabled):not(.disabled):active:focus, .btn-habol:not(:disabled):not(.disabled).active:focus,
+.show > .btn-habol.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+}
