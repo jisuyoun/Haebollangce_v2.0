@@ -30,6 +30,7 @@ public class SecurityConfig {
     		// 메인 화면에 대한 접근 허용
     		auth.requestMatchers("/").permitAll();
     		auth.requestMatchers("/main/mainPage").permitAll();
+    		auth.requestMatchers("/challenge/selectAllChallenge").permitAll();
     		
     		// 그 외의 모든 요청 막기
     		auth.anyRequest().authenticated();
